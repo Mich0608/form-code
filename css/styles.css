@@ -9,4 +9,5 @@ html, body {
 
 canvas {
   display: block;
+  cursor: url('../images/resized_fork.png'), auto;
 }
