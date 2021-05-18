@@ -33,10 +33,11 @@ function drawStir(i) {
 }
 
 function draw() {
-    background(255, 255, 255)
+    background(0, 0, 0)
     frameRate(20)
     stroke(220)
     fill(0, 0, 0, 0)
+    strokeWeight(2)
     ellipse(x, y, 500)
     strokeWeight(5)
     for (let i = 0; i < 100; i++) {
