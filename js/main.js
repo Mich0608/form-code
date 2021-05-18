@@ -23,12 +23,6 @@ function setup() {
 
 }
 
-function getDistFromMouse(v1, v2, i) {
-    let p = createVector(mouseX, mouseY);
-    let op = orthogonalProjection2(v1, v2, p);
-    ds[i] = p5.Vector.dist(p, op);
-}
-
 function drawStir(i) {
     if (ds[i] < 20) {
         if(ys[i] > height / 2) dy = -dy
@@ -36,10 +30,6 @@ function drawStir(i) {
         xs[i] += dx
         ys[i] += dy
     }
-}
-
-function mouseClicked() {
-    click++
 }
 
 function draw() {
@@ -87,6 +77,16 @@ function draw() {
         }
     }
 
+}
+
+function mouseClicked() {
+    click++
+}
+
+function getDistFromMouse(v1, v2, i) {
+    let p = createVector(mouseX, mouseY);
+    let op = orthogonalProjection2(v1, v2, p);
+    ds[i] = p5.Vector.dist(p, op);
 }
 
 
