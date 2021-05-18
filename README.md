@@ -1,4 +1,8 @@
-# FORM + CODE
+# FORM + CODE REMIX: GLITCHCORE PASTA
+
+Made pasta with p5.js, but it glitches.
+
+**Assignment specifications below:**
 
 ![p5.js + canvas](http://i3.ytimg.com/vi/s01IVHrWmjM/maxresdefault.jpg)
 
