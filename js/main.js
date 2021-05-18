@@ -33,7 +33,7 @@ function drawStir(i) {
 }
 
 function draw() {
-    background(0, 0, 0)
+    background(0)
     frameRate(20)
     stroke(220)
     fill(0, 0, 0, 0)
@@ -41,6 +41,7 @@ function draw() {
     ellipse(x, y, 500)
     strokeWeight(5)
     for (let i = 0; i < 100; i++) {
+        fill(255, 255, 255, 5)
         if(click % 3 == 0){
             stroke(random(100, 255), random(100, 255), random(100, 255))
 
@@ -53,7 +54,7 @@ function draw() {
             drawStir(i)
         }
         else if(click % 3 == 1){
-            fill(0, 0, 0, 5)
+            fill(255, 255, 255, 5)
             frameRate(10)
             stroke(random(100, 255), random(100, 255), random(100, 255))
             let inc = 0
@@ -65,7 +66,7 @@ function draw() {
             bezier(x, y, p1x, p1y, p2x, p2y, mouseX, mouseY)
         }
         else if(click % 3 == 2){
-            fill(0, 0, 0, 5)
+            fill(255, 255, 255, 5)
             frameRate(20)
             stroke(random(100, 255), random(100, 255), random(100, 255))
             let inc = 0
